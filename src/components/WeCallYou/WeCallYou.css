@@ -1,0 +1,117 @@
+.wcu {
+    font-family: 'Ubuntu';
+}
+
+/* wcu Box */
+.wcu-phone-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.wcu-phone-wrapper:before {
+    content: '+375';
+    font-size: 16px;
+    color: black;
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+.wcu-phone-input {
+    display: block;
+    text-indent: 54px;
+    border: 1px solid #b6b6b6;
+    background: #d0d0d0;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.wcu-box {
+    display: none;
+    background: #e9e9e9;
+    color: #717171;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 200;
+}
+
+.wcu-box-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.wcu-box-close::after,
+.wcu-box-close::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 5px;
+    background-color: #888585;
+    -webkit-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.wcu-box-close::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.wcu-box-close::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 5px;
+}
+
+.wcu-box-label {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 37vh;
+    margin-bottom: 10px;
+}
+
+.wcu-button-send {
+    display: block;
+    background: #f2645a;
+    border: 1px solid #b9544d;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+/* wcu Show Button */
+.wcu-show-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    box-sizing: border-box;
+}
+
+.wcu-show-btn .wcu-circle {
+    background-image: url("data:image/svg+xml;base64,CgkJPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIiB2ZXJzaW9uPSIxLjEiIGNsYXNzPSJyYy1yZXNldCI+CgkJCTxwYXRoIGZpbGw9IiNmZmYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyLjczNDI3OSwgNDEuNDk5NDQ5KSByb3RhdGUoMTIwLjAwMDAwMCkgdHJhbnNsYXRlKC00Mi43MzQyNzksIC00MS40OTk0NDkpIiBkPSJNMjcuOSA1MC4yQzI2LjYgNTAuOSAyNiA1MC45IDI1IDQ5LjcgMjQuNyA0OS40IDI0LjggNDkuMSAyNS4xIDQ4LjkgMjggNDcuMyAyOS44IDQ2LjIgMzIuMyA0NC44IDMyLjUgNDQuNiAzMi44IDQ0LjUgMzMuMSA0NC41IDMzLjMgNDQuNCAzMy42IDQ0LjYgMzMuNyA0NC43IDM0LjEgNDUuNiAzMy42IDQ2LjkgMzIuNyA0Ny40IDMxLjkgNDcuOSAzMC44IDQ4LjUgMzAuMiA0OC44IDI5LjYgNDkuMiAyOC43IDQ5LjggMjcuOSA1MC4yWk01Ny41IDUwLjJDNTguOCA1MC45IDU5LjQgNTAuOSA2MC40IDQ5LjcgNjAuNyA0OS40IDYwLjcgNDkuMSA2MC4zIDQ4LjkgNTcuNCA0Ny4zIDU1LjYgNDYuMiA1My4yIDQ0LjggNTIuOSA0NC42IDUyLjYgNDQuNSA1Mi4zIDQ0LjUgNTIuMiA0NC40IDUxLjggNDQuNiA1MS44IDQ0LjcgNTEuNCA0NS42IDUxLjkgNDYuOSA1Mi43IDQ3LjQgNTMuNiA0Ny45IDU0LjYgNDguNSA1NS4yIDQ4LjggNTUuOSA0OS4yIDU2LjggNDkuOCA1Ny41IDUwLjJaTTYwLjkgNDcuOUM1OS4yIDQ2LjkgNTQuOSA0NC40IDUyLjkgNDMuMyA1Mi43IDQzLjEgNTIuNCA0Mi44IDUyLjQgNDIuNSA1Mi4xIDQwLjcgNTAuOSAzOS4zIDQ5IDM5LjMgNDYuOSAzOS4zIDQ0LjggMzkuMiA0Mi43IDM5LjIgNDAuNyAzOS4yIDM4LjYgMzkuMyAzNi41IDM5LjMgMzQuNiAzOS4zIDMzLjQgNDAuNyAzMy4xIDQyLjUgMzMuMSA0Mi44IDMyLjggNDMuMSAzMi42IDQzLjMgMzAuNiA0NC40IDI3LjEgNDYuNCAyNC42IDQ3LjggMjQuMyA0OCAyMy43IDQ3LjggMjMuNCA0NyAyMy4yIDQ2LjQgMjMuMSA0NS44IDIzIDQ1LjIgMjIuMyA0MS43IDIzLjYgMzggMjYuOCAzNi40IDI4LjcgMzUuNCAzMC43IDM0LjYgMzIuNyAzMy45IDM1LjkgMzIuNiAzOS4zIDMyLjMgNDIuNyAzMi40IDQ2LjIgMzIuMyA0OS41IDMyLjYgNTIuOCAzMy45IDU0LjggMzQuNiA1Ni44IDM1LjQgNTguNyAzNi40IDYxLjkgMzggNjMuMiA0MS43IDYyLjUgNDUuMiA2Mi40IDQ1LjggNjEuOSA0Ni45IDYxLjcgNDcuNSA2MS42IDQ3LjggNjEuMiA0OCA2MC45IDQ3LjlaIiBjbGFzcz0icmMtcmVzZXQiPjwvcGF0aD4KCQk8L3N2Zz4KCQ==");
+    border: 3px solid rgb(25, 139, 190);
+    background-color: rgba(8, 89, 126, 0.9);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-size: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
