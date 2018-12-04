@@ -20,8 +20,18 @@ class WeCallYou extends Component {
         this.setState({ phone });
     }
 
+    metrics() {
+        yaCounter51244735.reachGoal('call_skotch_production');
+        ga('send', 'event', 'form_callback', 'submit');
+        console.log('ya+ga');
+    }
+
     handleSendPhone() {
         let input = document.querySelector('.wcu-phone-input');
+
+        if (window.location.host === "skotchproduction.by") {
+            this.metrics();
+        }
 
         if ( !/[0-9]{9}/.test(input.value) ) {
             input.style.borderColor = '#a53030';
