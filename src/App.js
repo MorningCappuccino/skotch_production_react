@@ -1,14 +1,19 @@
-import React, { Component } from 'react';
-import './App.css';
-import WeCallYou from './components/WeCallYou/WeCallYou';
-import Overlay from './components/Overlay/Overlay';
+import React, { Component } from "react";
+import "./App.css";
+import WeCallYou from "./components/WeCallYou/WeCallYou";
+import Overlay from "./components/Overlay/Overlay";
+
+import MainPage from "";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <WeCallYou />
-        <Overlay />
+        <MainPage>
+          <MainScreen />
+          <WeCallYou />
+          <Overlay />
+        </MainPage>
       </div>
     );
   }

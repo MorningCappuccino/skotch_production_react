@@ -21,8 +21,8 @@ class WeCallYou extends Component {
     }
 
     metrics() {
-        yaCounter51244735.reachGoal('call_skotch_production');
-        ga('send', 'event', 'form_callback', 'submit');
+        window.yaCounter51244735.reachGoal('call_skotch_production');
+        window.ga('send', 'event', 'form_callback', 'submit');
         console.log('ya+ga');
     }
 
