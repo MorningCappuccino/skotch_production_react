@@ -102,6 +102,7 @@
     bottom: 40px;
     right: 40px;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .wcu-show-btn .wcu-circle {

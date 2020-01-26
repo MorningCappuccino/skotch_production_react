@@ -3,7 +3,12 @@ import "./App.css";
 import WeCallYou from "./components/WeCallYou/WeCallYou";
 import Overlay from "./components/Overlay/Overlay";
 
-import MainPage from "";
+import MainPage from "./App.styled";
+import MainScreen from "./components/mainScreen";
+import Menu from "./components/menu";
+import AboutUs from "./components/aboutUs";
+import stepOfProduction from "./components/stepOfProduction";
+import StepOfProduction from "./components/stepOfProduction";
 
 class App extends Component {
   render() {
@@ -11,6 +16,9 @@ class App extends Component {
       <div className="App">
         <MainPage>
           <MainScreen />
+          <Menu />
+          <AboutUs />
+          <StepOfProduction />
           <WeCallYou />
           <Overlay />
         </MainPage>
