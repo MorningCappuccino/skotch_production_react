@@ -19,7 +19,7 @@ const owlOptions = {
 };
 
 const StepOfProduction = () => (
-  <Wrapper>
+  <Wrapper id="pd">
     <Content>
       <Title>Этапы производства</Title>
       <OwlCarousel options={owlOptions}>

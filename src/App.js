@@ -7,8 +7,9 @@ import MainPage from "./App.styled";
 import MainScreen from "./components/mainScreen";
 import Menu from "./components/menu";
 import AboutUs from "./components/aboutUs";
-import stepOfProduction from "./components/stepOfProduction";
 import StepOfProduction from "./components/stepOfProduction";
+import OurWork from "./components/ourWork";
+import Contacts from "./components/contacts";
 
 class App extends Component {
   render() {
@@ -19,6 +20,8 @@ class App extends Component {
           <Menu />
           <AboutUs />
           <StepOfProduction />
+          <OurWork />
+          <Contacts />
           <WeCallYou />
           <Overlay />
         </MainPage>

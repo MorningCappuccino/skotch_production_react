@@ -29,7 +29,7 @@ const Text = styled.div`
 `;
 
 const AboutUs = () => (
-  <Wrapper>
+  <Wrapper id="about-us">
     <Content>
       <Title>О нас</Title>
       <Text>

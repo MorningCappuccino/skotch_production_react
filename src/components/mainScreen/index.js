@@ -15,7 +15,7 @@ const Bg = styled.div`
   background-image: url(${bgImg});
 
   @media ${device.mobileL} {
-    background-position: center 34%
+    background-position: center 34%;
   }
 `;
 
@@ -27,13 +27,13 @@ const Logo = styled.div`
   width: 400px;
 
   @media ${device.mobileL} {
-      width: 70%;
+    width: 70%;
   }
 `;
 
 function MainScreen() {
   return (
-    <Wrapper>
+    <Wrapper id="main-screen">
       <Bg />
       <Logo>
         <img src={logoImg} alt="Skotch production logo" />
