@@ -26,7 +26,6 @@ const Menu = () => {
     /* Mobile Menu */
   }
   useEffect(() => {
-    console.log("Jquery: ", $);
     const burger = findDOMNode(burgerRef.current),
       mobileMenu = findDOMNode(mobileMenuRef.current),
       mobileMenuCloseBtn = findDOMNode(mobileMenuCloseBtnRef.current);
